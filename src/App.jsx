@@ -79,7 +79,7 @@ export default function App() {
         </main>
 
         <footer>
-          <i>Jakub Hrabec - Full Stack Web Development 5G00DM05 - TAMK 2026</i>
+          <i>Jakub Hrabec - Full Stack Web Development - TAMK 2026</i>
         </footer>
       </div>
     </BrowserRouter>

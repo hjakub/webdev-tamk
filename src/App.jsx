@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import ActiveTasksView from "./views/ActiveTasksView";
 import ActivityHistoryView from "./views/ActivityHistoryView";
 import AnalyticsView from "./views/AnalyticsView";
+import InfoView from "./views/InfoView";
 import NotFoundView from "./views/NotFoundView";
 import "./App.css";
 
@@ -37,6 +38,14 @@ export default function App() {
             >
               Analytics
             </NavLink>
+            <NavLink
+              to="/info"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Info
+            </NavLink>
           </nav>
         </header>
 
@@ -45,6 +54,7 @@ export default function App() {
             <Route path="/" element={<ActiveTasksView />} />
             <Route path="/history" element={<ActivityHistoryView />} />
             <Route path="/analytics" element={<AnalyticsView />} />
+            <Route path="/info" element={<InfoView />} />
             <Route path="*" element={<NotFoundView />} />
           </Routes>
         </main>
